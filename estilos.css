@@ -1,0 +1,588 @@
+/*Reset values*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------- Estilos del micrositio --------*/
+
+html {
+	background: #fff;
+}
+
+body {
+
+	margin: 0;
+	padding:0;
+	font:normal 12px/18px Verdana, Arial, Helvetica, sans-serif;
+	color:#333333;
+	background:#ffffff url(images/bg.jpg) top left repeat-x;
+	width: 100%;
+	display: table;
+	text-align:center;
+
+}
+
+p{
+	text-align:justify;
+	padding-right:5px;
+	margin-top:5px;
+}
+
+h2{
+	font-size:18px;
+	line-height: 34px;
+
+}
+
+h3{
+	font-size:14px;
+	line-height:30px;
+}
+
+h4{
+	font-size:12px;
+	line-height:26px;
+}
+h2,h3,h4{
+	color:#900;
+	}
+
+#container {
+	width: 960px;
+	margin: 0 auto;   /* align for good browsers */
+	text-align: left; /* counter the body center */
+}
+
+#header {
+	width: 960px;
+	height: 132px;
+	background: url(images/header.jpg) no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+#header h1{
+ 	position:relative;
+	top:24px;
+	left:272px;
+	width:434px;
+	height:58px;
+	
+	text-indent: -9999px;
+}
+
+/*---- Inicio Menu Principal ----*/
+
+#navigation {
+	//width: 755px;
+	width: 800px;
+	height: 30px;
+	padding: 5px 0px 5px 150px;
+	margin-left:50px;
+	margin-top:-40px;
+	//background:url(bienvenido.png);
+}
+
+#menu, #menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+}
+
+.bold{ /*Clase para que se vea el bold en el menú principal*/
+	font-weight:bold;
+	}
+
+#menu li {
+	float: left;
+	font-size: 14px;
+}
+
+
+#menu a {
+	display: block;
+	line-height: 38px;
+	padding: 0 15px;
+	color: #666666;
+	font-family: Verdana, sans-serif;
+	text-decoration:none;
+}
+
+#menu a:hover {
+	background: url(images/navb1.png) no-repeat top left;
+	padding: 0 2px 0 15px;
+	margin-right: 0;
+	color:#FF0000;
+}
+
+#menu a:hover span {
+	color: #FFFFFF;
+	background: url(images/navb2.png) no-repeat top right;
+	padding: 10px 2px 13px 11px;
+	position: relative;
+	/*left: -2px;*/
+}
+
+/* Submenu */
+#menu ul.submenu {
+	/*border:1px solid #000000;*/
+	padding:5px;
+	position:absolute;
+	list-style:none;
+	background-color:#F3F3F3;
+	font-weight:normal;
+	width:auto;
+}
+#menu ul.submenu li{
+	display: block;
+	white-space:nowrap;
+	float:none;
+	background-image:none;
+	background-color:#FFFFFF;
+	/*border-bottom:1px solid #DDDDDD;*/
+	/*width:190px;*/
+	width:auto;
+	font-size:11px;
+	letter-spacing:0px;
+	font-weight:normal;
+}
+
+#menu ul.submenu li a:hover{
+	background-color:#EFEFEF;
+	background-image:none;
+	color:#FF0000;
+}
+/* Fin Submenu */
+
+/*---- Fin Menu Principal ----*/
+
+/*---- Navegacion botones ----*/
+
+.navigation_btn {
+	padding:0 0 0 20px;
+	margin:-35px 0 0 750px;
+	list-style:none;
+	height:40px;
+	clear: both;
+  	float: left;
+}
+
+
+.navigation_btn li {
+	float:left;
+}
+.navigation_btn li a {
+	display:block;
+	float:left;
+	height:40px;
+	line-height:18px;
+	color:#666666;
+	text-decoration:none;
+	font-family:"Trebuchet MS",Verdana, Arial, sans-serif;
+	text-align:left;
+	padding:0 0 0 5px;
+	font-size:11px;
+}
+
+.navigation_btn li a em {
+	display:block;
+	float:right;
+	width:29px;
+	height:32px;
+	margin:5px;
+}
+
+.navigation_btn li a em.home {
+	background-image: url(images/home.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-top:-3px;
+}
+.navigation_btn li a em.pdf {
+	background-image: url(images/pdf.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-top:-20px;
+}
+
+/*---- Fin navegacion botones ----*/
+
+#contentwrapper{
+	float: left;
+	width: 100%;
+	margin:0;
+	margin-top:25px;
+}
+
+#contentwrapper, #leftcolumn, #rightcolumn{
+	margin-top:25px;
+}
+
+#contentcolumn{
+	margin: 0 163px 0 207px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+	background:#FFFFFF url(images/promociones_bg.jpg) top center no-repeat;
+	height:380px;
+	//padding:5px 40px 0 50px; 
+	padding:5px 20px 0 45px;
+	
+}
+
+#leftcolumn{
+	float: left;
+	width: 207px; /*Width of left column in pixel*/
+	margin-left: -960px; /*Set margin to that of -(MainContainerWidth)*/
+}
+
+#leftcolumn h2.medidor, #leftcolumn h2.medidor a, #leftcolumn h2.medidor a:visited{
+	width:207px;
+	height:140px;
+	text-indent: -20000px;
+	background: #FFFFFF url(images/medidor_velocidad.jpg) top left no-repeat;
+	display:block;
+}
+
+#leftcolumn h2.medidor a:hover{
+	width:207px;
+	height:140px;
+	background: #FFFFFF url(images/medidor_velocidad_hover.jpg) top left no-repeat;
+	display:block;
+}
+
+#leftcolumn h2.seguridad, #leftcolumn h2.seguridad a, #leftcolumn h2.seguridad a:visited{
+	width:207px;
+	height:122px;
+	text-indent: -20000px;
+	background: #FFFFFF url(images/seguridad_total.jpg) top left no-repeat;
+	display:block;
+}
+
+#leftcolumn h2.seguridad a:hover{
+	width:207px;
+	height:122px;
+	background: #FFFFFF url(images/seguridad_total_hover.jpg) top left no-repeat;
+	display:block;
+}
+
+#leftcolumn h2.correo, #leftcolumn h2.correo a, #leftcolumn h2.correo a:visited{
+	width:207px;
+	height:108px;
+	text-indent: -20000px;
+	background: #FFFFFF url(images/correo_electronico.jpg) top left no-repeat;
+	display:block;
+}
+
+#leftcolumn h2.correo a:hover{
+	width:207px;
+	height:108px;
+	background: #FFFFFF url(images/correo_electronico_hover.jpg) top left no-repeat;
+	display:block;
+}
+
+#rightcolumn{
+	float: left;
+	width: 163px; /*Width of right column*/
+	margin-left: -163px; /*Set left margin to -(RightColumnWidth)*/
+}
+
+#rightcolumn h2, #rightcolumn h2 a, #rightcolumn h2 a:visited, #rightcolumn h2 a:hover{
+	width:163px;
+	height:369px;
+	text-indent: -20000px;
+	background: #FFFFFF url(images/roaming.jpg) top left no-repeat;
+	text-decoration: none;
+	display:block;
+}
+
+.innertube{
+	margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+	margin-top: 0;
+}
+
+#content{
+	margin:0 auto;
+	height:360px;
+	overflow: auto;
+	padding-right:10;
+}
+
+#content ul.lista{
+	padding:10px;
+	text-align:left;
+}
+
+#content li.listaitem{
+	margin-left:15px;
+	padding-left:5px;
+	font-size:11px;
+	list-style-image:url(images/dot.gif);
+}
+
+#content a.vinculo{
+	text-decoration:none;
+	color:#333333;
+	}
+#content a.vinculo:hover{
+	border-bottom:dotted;
+	}
+
+#footer {
+	clear: left;
+	width:100%;
+	background:#ffffff url(images/footer_line.jpg) top center repeat-x;
+	margin-top:20px;
+	padding: 11px 0;
+	text-align: center;
+	color: #333333;
+	font: normal 11px/14px "Lucida Sans Unicode", Arial, Verdana, no-serif;
+}
+
+#footer a {
+	color: #333333;
+	text-decoration: underline;
+}
+
+#footer a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#footer img{
+ 	vertical-align: middle;
+}
+
+/*.tarifa {
+	font-size: 10px; margin: 0px auto; width: 480px;
+}
+.tarifa thead {
+	color: white;
+}
+.tarifa thead tr th {
+	border: #999999 1px solid;
+	background-color: #ce0000;
+	text-align:center;
+}
+.tarifa tbody tr td {
+	border: #999999 1px solid;
+	background-color:#FFFFFF;
+	text-align:center;
+	padding:3px;
+}
+
+.tarifa2 {
+	font-size: 10px; margin: 0px auto; width: 480px;
+}
+.tarifa2 thead {
+	color: white;
+}
+.tarifa2 thead tr th {
+	border: #999999 1px solid;
+	background-color: #ce0000;
+	text-align:center;
+}
+.tarifa2 tbody tr td {
+	border: #999999 1px solid;
+	background-color:#FFFFFF;
+	padding:3px;
+}*/
+
+/** Para hacer las tablas de los modems **/
+ 
+* {
+	-moz-box-sizing: border-box;
+}
+
+.tbl {
+/* +2 for border */
+	width: 482px;
+	font-family: verdana,arial,sans-serif;
+    font-size:14px;
+    float:left;
+    border:none;
+    overflow:hidden;
+	margin:0 auto;
+	text-align:center;
+}
+/** <td> equivalent **/
+.cell {
+     width:220px;
+     float:left;
+     padding:2px 10px;
+     font-size:14px;
+     text-align:center;
+	 font-weight:normal;
+}
+
+.cell-net-caract {
+     width:303px;
+     float:left;
+     padding:2px 10px;
+     font-size:14px;
+     text-align:justified;
+	 font-weight:normal;
+}
+
+.cell-net-pic {
+     width:179px;
+     float:left;
+     text-align:right;
+}
+/** colspan across entire table **/
+.colspan {
+      width: 482px;
+      float:left;
+}
+         /** <th> equivalent **/
+.header {
+      text-align:center;
+      float:left;
+}
+
+/*---- Aquí comienza el switcher de imagenes para las promos en el home ----*/
+
+#picture {
+	margin: 0 auto;
+	width: 454px;
+	height: 270px;
+	background: url(images/promo_internetcontigo.jpg) no-repeat top left;
+	clear: both;
+}
+#nav {
+	margin: 0 auto;
+	background: #fff;
+	text-align: center;
+	font-family: "Trebuchet MS",Arial,Verdana,sans-serif;
+	width: 456px;
+	height: 48px;
+	background: #ccc;
+	clear: both;
+}
+#nav ul {
+	list-style: none;
+	line-height: 40px; 
+	font-size: 12px;
+	font-weight:500;
+}
+#nav li {
+	float: left;
+	background: transparent;
+}
+#nav li a {
+	width:114px;
+	height: 48px;
+	line-height:20px;
+	display: block;
+	color: #333;
+	text-decoration: none;
+	text-align: center;
+	border-right:#ccc thin solid;
+}
+//ul li:hover, ul li a:hover
+#nav ul li:hover, #nav ul li a:hover{
+	color: #000;
+	background: #fff url(images/home_promos_buttons_bg.jpg) top left repeat-x;
+}
+#nav li ul {
+	position: absolute;
+	left: -5000px;
+	top: 50px;
+}
+#nav li li {
+	width: 464px;
+}
+
+li#blue a {
+	background: #c00 url(images/home_promos_buttons_bg_off.jpg) top left repeat-x;
+}
+li#red a {
+	background: #c00 url(images/home_promos_buttons_bg_off.jpg) top left repeat-x;
+}
+li#green a {
+	background: #c00 url(images/home_promos_buttons_bg_off.jpg) top left repeat-x;
+}
+li#yellow a {
+	background: #c00 url(images/home_promos_buttons_bg_off.jpg) top left repeat-x;
+}
+li#blue:hover ul {
+	margin-top:149;
+	left: auto;
+	width: 464px;
+	height: 270px;
+}
+li#red:hover ul {
+	margin-top:149;
+	margin-left: -114px;
+	left: auto;
+	width: 464px;
+	height: 270px;
+}
+li#green:hover ul {
+	margin-top:149;
+	margin-left: -228px;
+	left: auto;
+	width: 464px;
+	height: 270px; 
+}
+li#yellow:hover ul {
+	margin-top:149;
+	margin-left: -342px;
+	left: auto;
+	width: 464px;
+	height: 270px; 
+}
+//ul li:hover, ul li a:hover
+/*---- Fin switcher imagenes ----*/
+
+/*---- Estilos especiales ---*/
+
+/*---- Fin estilos especiales ----*/
+
+ 

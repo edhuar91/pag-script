@@ -1,0 +1,175 @@
+ 
+#rounded-corner {
+border-collapse:collapse;
+font-family:Verdana,"Trebuchet MS","Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+
+font-size:12px;
+margin:20px; 
+text-align:center;
+width:480px;
+font-size: 10px; margin: 0px auto; width: 480px;
+/*border:#333 thin solid;*/
+}
+#rounded-corner thead th.rounded-company {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background: url(left.png) no-repeat scroll left -1px;
+}
+#rounded-corner thead th.rounded-q4 {
+-moz-background-clip:border; 
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background: url(right.png) no-repeat scroll right -1px;
+}
+#rounded-corner th {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding; 
+//background:#E61515 none repeat scroll 0 0;
+background:#ccc url(bg_cells.png) top left repeat-x;
+
+color:#ffffff;
+font-size:9px;
+font-weight:normal;
+padding:3px;
+/*
+padding-top:4px;
+padding-right:2px;
+padding-left:2px;
+padding-bottom:1px;
+*/
+//border-bottom:#E61515 thin solid;
+}
+#rounded-corner td {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+//background:#F0F0F0 none repeat scroll 0 0;
+background:#FFFFFF none repeat scroll 0 0;
+color:#333333;
+font-weight:bold;
+font-size:12px;
+padding:4px;
+/*padding-top:4px;
+padding-right:0px;
+padding-left:0px;
+padding-bottom:4px;
+*/
+font-family:"Trebuchet MS","Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+border-bottom:#EEE thin solid;
+border-left:#ccc thin solid;
+
+}
+
+
+#rounded-corner tbody td.rounded-foot-left {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+//background:#F0F0F0 url(botleft.png) no-repeat scroll left bottom;
+background:#FFFFFF url(bottom-left.png) no-repeat scroll left bottom;
+color:#333333;
+font-weight:bold;
+font-size:12px;
+
+border-left:none;
+}
+#rounded-corner tbody td.rounded-foot-right {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+//background:#F0F0F0 url(botright.png) no-repeat scroll right bottom;
+background:#FFFFFF url(bottom-right.png) no-repeat scroll right bottom;
+border-right:none;
+color:#333333;
+font-weight:bold;
+font-size:12px;
+
+}
+#rounded-corner tbody tr:hover td {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#FFDEDE none repeat scroll 0 0;
+}
+#background-image {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(blurry.jpg) no-repeat scroll 330px 59px;
+border-collapse:collapse;
+font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+font-size:12px;
+margin:20px;
+text-align:left;
+width:480px;
+}
+
+
+/*---- Para las tablas de planes netbook ----*/
+ 
+#rounded-corner-net {
+border-collapse:collapse;
+font-family:"Trebuchet MS","Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+font-size:12px;
+margin:20px;
+text-align:center;
+width:460px;
+font-size: 10px;
+margin: 0px auto;
+/*border:#333 thin solid;*/
+}
+#rounded-corner-net thead th.rounded-company {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#E61515 url(left.png) no-repeat scroll left -1px;
+}
+#rounded-corner-net thead th.rounded-q4 {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#E61515 url(right.png) no-repeat scroll right -1px;
+}
+#rounded-corner-net th {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#E61515 none repeat scroll 0 0;
+color:#ffffff;
+font-size:13px;
+font-weight:normal;
+padding:8px;
+border-bottom:#ccc thin solid;
+}
+#rounded-corner-net td {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#F0F0F0 none repeat scroll 0 0;
+border-top:1px solid #FFFFFF;
+color:#333333;
+padding:8px;
+border-bottom:#ccc thin solid;
+}
+
+
+#rounded-corner-net tfoot td.rounded-foot-left {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#F0F0F0 url(botleft.png) no-repeat scroll left bottom;
+}
+#rounded-corner-net tfoot td.rounded-foot-right {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#F0F0F0 url( botright.png) no-repeat scroll right bottom;
+}
+#rounded-corner-net tbody tr:hover td {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#FFDEDE none repeat scroll 0 0;
+}
